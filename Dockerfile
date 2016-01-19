@@ -2,4 +2,4 @@ FROM registry.access.redhat.com/jboss-eap-6/eap-openshift:6.4
 
 EXPOSE 8080 8888
 
-RUN curl https://s3-ap-southeast-1.amazonaws.com/dir-script-test-openshift/script/spring-music.war -o $JBOSS_HOME/standalone/deployments/spring-music.war
+RUN curl https://github.com/FPT-Frontier/spring-music-war/blob/master/spring-music.war -o $JBOSS_HOME/standalone/deployments/spring-music.war
